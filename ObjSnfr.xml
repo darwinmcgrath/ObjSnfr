@@ -25,17 +25,31 @@
                 <next>
                   <block type="oled_cleardisplay" id="166">
                     <next>
-                      <block type="oled_drawtext" id="167">
-                        <field name="TEXT">human</field>
+                      <block type="oled_setcursor" id="171" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="172">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="173">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="robot_delay" id="168" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="169">
-                                <field name="NUM">1000</field>
-                              </block>
-                            </value>
+                          <block type="oled_drawtext" id="167">
+                            <field name="TEXT">human</field>
                             <next>
-                              <block type="oled_cleardisplay" id="170"></block>
+                              <block type="robot_delay" id="168" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="169">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="170"></block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
