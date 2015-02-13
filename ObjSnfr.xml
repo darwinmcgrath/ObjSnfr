@@ -1,5 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawtext" id="39" x="9" y="63">
-    <field name="TEXT">this is me</field>
+  <block type="oled_cleardisplay" id="48" x="9" y="37">
+    <next>
+      <block type="oled_drawtext" id="39">
+        <field name="TEXT">this is me</field>
+      </block>
+    </next>
   </block>
 </xml>
